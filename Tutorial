@@ -1,0 +1,25 @@
+DUMP SERVICE:
+Welcome!
+This is the tutorial!
+Before you start, please open the DumpService/ReadMe and DumpService/Config/DumpConfig
+Read the ReadMe and configure the DumpConfig
+
+-- Start
+
+Everytime, start with a -- local DumpService = require(game.ServerScriptService.DumpService.Module) -- to make the script understand the API, otherwise it will error.
+
+-- Types of dumps
+instance
+RBXScriptConnection
+thread
+All
+-- Commands
+
+If you want to dump an item in the dump, type -- DumpService:Dump(TheItem) -- so it works
+:GetDump(type, random, which) -- ARGS: [type: Used to make the Service to get a dump, otherwise if it doesnt exist it will error.; random: Randomizer (to choose a random object); which: Number of dump, Will error if doesnt exist] Get a dump.
+:Remove(TheItem) -- Removes a dump
+:GetDumpCount(type) -- Gets the count of the dump type
+:PeekDump(type) -- Returnes a table of the dump types
+:CleanDump(type, randomized, which) -- The args are the same as :GetDump (optinal, but type isnt optinal); Cleans the dump type.
+:DumpAfter(TheItem, Seconds) -- Dumps an item after the seconds setted
+-- Thats it for now!
